@@ -147,7 +147,7 @@ abstract class AbstractGate extends Component implements GateInterface, GateLogI
             }
         }
 
-        throw new InvalidAmountException("Amount should be a numeric value and be grater than $minAllowedPrice in IR Toman", $amount);
+        throw new InvalidAmountException("Amount should be a numeric value and be grater than $minAllowedPrice and lower then $maxAllowedPrice in IR Toman", $amount);
     }
 
     /**
